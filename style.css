@@ -42,7 +42,7 @@ html,body{
     text-decoration: none;
     color: #0284c7;
     font-weight: bold;
-    transition: all .3s ease;
+    transition: all .5s;
 }
 
 /*Top Left Link Hover*/
@@ -94,11 +94,12 @@ hr {
 
 /*Icons*/
 i {
-    transition: all .3s ease;
+    transition: all .5s;
     color: #bdbdbd;
 }
 
 /*Icons Hover*/
 i:hover {
     color: #ff004f;
+    transform: translateY(-10px);
 }
