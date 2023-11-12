@@ -47,7 +47,7 @@ html,body{
 
 /*Top Left Link Hover*/
 .topleft a:hover {
-    color: orange;
+    color: #ff004f;
 }
 
 /*Middle*/
@@ -95,10 +95,10 @@ hr {
 /*Icons*/
 i {
     transition: all .3s ease;
-    color: #fff;
+    color: #bdbdbd;
 }
 
 /*Icons Hover*/
 i:hover {
-    color: #bdbdbd;
+    color: #ff004f;
 }
