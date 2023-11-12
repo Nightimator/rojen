@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KKG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="kkg.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="dv">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="">KKG</a>
+                </div>
+                <ul class="links">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#location">Location</a>
+                    </li>
+                </ul>
+                <!--Contact button in navigation-->
+                <a href="/code/web/test/parallax.html" class="action_btn">Contact Us</a>
+                <!--burger menu after device width shrinks-->
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <!--Dropdown navigation-->
+            <div class="dropdown_menu">
+                <!--Links in dropdown navigation-->
+                <li>
+                    <a href="/code/web/home/home.html">Home</a>
+                </li>
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#aboutus">About Us</a>
+                </li>
+                <li>
+                    <a href="#location">Location</a>
+                </li>
+                <!--Contact button in dropdown navigation-->
+                <li>
+                    <a href="#" class="action_btn">Contact Us</a>
+                </li>
+            </div>
+        </header>
+        <!--Image of momo in landing page-->
+        <div class="landingimg" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+            <img class="img1" src="momo_img.png" width="600px">
+        </div>
+        <!--Slogan in landing page-->
+        <h1 class="slogan" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Momo Magic:<br>Where
+            Flavor<br>Takes Flight!
+        </h1><br>
+        <!--Menu button in langing page-->
+        <a href="#menu">
+            <button class="menu_btn">MENU
+            </button>
+        </a><br><br>
+    </div>
+    <!--About Us-->
+    <div id="aboutus" class="dv1"><br>
+        <!--background in about us-->
+        <div class="dv1-text" data-aos="fade-up-left" data-aos-duration="1000" data-aos-once="true">
+            <!--Header in about us-->
+            <h1 class="wrw">Who are we?</h1><br>
+            <!--about us text-->
+            <p>Kabir Khaja Ghar is the first resturant of the Garcha. Our resturant was established in 1994 September
+                13.
+                In our resturant, we manke various types of newari cuisine, in
+                accor<span id="dots">...</span><span id="more">dance with our little touch up.<br><br>In addition to
+                    the
+                    traditional taste, we bring very affordable foods and a
+                    new breath to newari cuisine with our different recipes and momo options that are always
+                    hot, fresh and cooked specifically for you whenever you want.</span>
+            </p><br>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <!--Menu-->
+    <div id="menu" class="dv2"><br><br><br>
+        <!--header in menu page-->
+        <h1 class="menu-header">MENU</h1>
+        <div class="menu-cards">
+            <a href="#">
+                <div class="food-items">
+                    <img src="steamedmomo.png" width="195px"><br><br>
+                    <h3>Steamed Buff MoMo</h3>
+                    <h4 class="price">Rs.80</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="friedmomo.png" width="150px"><br><br>
+                    <h3>Fried Buff MoMo</h3>
+                    <h4 class="price">Rs.90</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="buffchilli.png" width="215px"><br><br>
+                    <h3>Buff Chilli</h3>
+                    <h4 class="price">Rs.100</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="choila.png" class="choila" width="150px"><br><br>
+                    <h3>Choila</h3>
+                    <h4 class="price">Rs.100</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="friedboiledegg.png" width="190px"><br><br>
+                    <h3>Fried Boiled Egg</h3>
+                    <h4 class="price">Rs.25</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="omlet.png" width="150px"><br><br>
+                    <h3>Omlet</h3>
+                    <h4 class="price">Rs.50</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="alutarkari.png" width="130px"><br><br>
+                    <h3>Alu Tarkari</h3>
+                    <h4 class="price">Rs.30</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="channa.png" width="150px"><br><br>
+                    <h3>Chana</h3>
+                    <h4 class="price">Rs.30</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img class="golberkoachar" src="golberakoaachar.png" width="70px"><br><br>
+                    <h3>Golbera ko Aachar</h3>
+                    <h4 class="price">Rs.30</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="mulakoachar.png" width="180px"><br><br>
+                    <h3>Mula ko Aachar</h3>
+                    <h4 class="price">Rs.30</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="kachilla.png" width="150px"><br><br>
+                    <h3>Ka Chilla</h3>
+                    <h4 class="price">Rs.100</h4>
+                </div>
+            </a>
+            <a href="#">
+                <div class="food-items">
+                    <img src="musya.png" class="musya" width="140px"><br><br>
+                    <h3>Musya</h3>
+                    <h4 class="price">Rs.30</h4>
+                </div>
+            </a>
+        </div><br><br><br><br><br><br><br><br>
+    </div>
+    <!--Visit us-->
+    <div class="dv3" id="location">
+        <br><br>
+        <!--Visit us header-->
+        <h1 class="visitus-header">visit us</h1>
+        <br><br><br>
+        <p class="iframe-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220.8219189539393!2d85.38629416219747!3d27.681736692853075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b518b32e153%3A0x83d085775fd317db!2sKabir%20khaja%20Ghar!5e0!3m2!1sen!2snp!4v1685558860350!5m2!1sen!2snp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </p><br>
+        <!--Address-->
+        <h3 class="adres"><i class="fa-solid fa-map-location-dot" style="color: #ffffff;"></i> Address:</span></h3>
+        <h3 class="adresloc">
+            <a href="https://www.google.com/maps/dir//M9HJ%2B778,+Madhyapur+Thimi+44600/@27.6817192,85.303969,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x39eb1b518b32e153:0x83d085775fd317db!2m2!1d85.3863704!2d27.6817436?entry=ttu"
+                target="_blank">M9HJ+778, Madhyapur Thimi 44600</a>
+        </h3><br>
+        <!--Email-->
+        <h3 class="emil"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Email:</h3>
+        <h3 class="emila">
+            <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=jrjtXGlRfcHvPFfJXTJCdrgPTFVJTfQpbmvmMDhGkJbFBwQjwQBWnxwzkBxhLDcJQFdRCVzg"
+                target="_blank">kabirkhajaghar@gmail.com</a>
+        </h3><br>
+        <!--Instagram-->
+        <h3 class="insta"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i> Instagram:</h3>
+        <h3 class="instaa">
+            <a href="https://instagram.com/nightimator_" target="_blank">instagram.com/kabirkhajaghar</a>
+        </h3><br>
+        <!--Phone Numbers-->
+        <h3 class="call"><i class="fa-solid fa-phone" style="color: #ffffff;"></i> Phone:</h3>
+        <h3 class="calla">
+            <a href="tel:9841514746">9841514746</a><span style="color: #fff;">,</span> <a
+                href="tel:9746428695">9746428695</a>
+        </h3><br><br><br><br>
+        <!--Wave animation-->
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </div>
+    <!--Last page-->
+    <div class="dv4"><br><br><br><br>
+        <div class="nthtext">
+            <a href="#menu">
+                <h3>About Us</h3>
+            </a>
+            <a href="#">
+                <h3>Privacy Policy</h3>
+            </a>
+            <a href="#">
+                <h3>Disclaimer</h3>
+            </a>
+            <a href="#"><img src="logo.png" alt="logo" width="300px"></a>
+            <a href="#">
+                <h3>Terms and Conditions</h3>
+            </a>
+            <a href="#">
+                <h3>FAQs</h3>
+            </a>
+            <a href="#">
+                <h3>Feedback</h3>
+            </a>
+        </div>
+        <div class="social">
+            <h3 class="folowuson">Follow us on:</h3><br>
+            <a class="fb" href="https://facebook.com/rojenchakradhar" target="_blank">
+                <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <a class="yt" href="https://youtube.com/@nightimator" target="_blank">
+                <i class="fa-brands fa-youtube fa-xl"></i>
+            </a>
+            <a class="instalgo" href="https://instagram.com/nightimator_" target="_blank">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a class="tktk" href="https://tiktok.com/@nightimator" target="_blank">
+                <i class="fa-brands fa-tiktok fa-xl"></i>
+            </a>
+            <a class="x" href="https://twitter.com/Nightimator_" target="_blank">
+                <i class="fa-brands fa-x-twitter fa-xl"></i>
+            </a>
+            <a class="thread" href="https://threads.com/nightimator" target="_blank">
+                <i class="fa-brands fa-threads fa-xl"></i>
+            </a>
+        </div><br><br><br><br>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+    </script>
+    <!--Js for animation on scroll-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Js for PreLoader-->
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        })
+    </script>
+    <!--Js for toggle-->
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isopen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isopen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <!--Read more/less button-->
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</body>
+
+</html>
