@@ -10,7 +10,7 @@ html,body{
 }
 @font-face {
     font-family: a;
-    src: url(/fonts/Montserrat-Medium.woff2);
+    src: url(Montserrat-Medium.woff2);
 }
 #main{
     position: relative;
