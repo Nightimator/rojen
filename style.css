@@ -1,3 +1,6 @@
+/*Custom Font Link*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -12,4 +15,90 @@ html,body{
 #main{
     position: relative;
     height: 100%;width: 100%;
+}
+
+/*Background Image*/.bgimg {
+    position: relative;
+    height: 100%;
+    background-image: url('background.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/*Top Left*/
+.topleft {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0284c7;
+}
+
+/*Top Link Link*/
+.topleft a {
+    text-decoration: none;
+    color: #0284c7;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+/*Top Left Link Hover*/
+.topleft a:hover {
+    color: orange;
+}
+
+/*Middle*/
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/*Vertical Line*/
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+/*Bottom Left*/
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 25px;
+}
+
+/*Social link Div*/
+.social {
+    margin-bottom: 2px;
+    margin-left: 29%;
+    display: flex;
+    column-gap: 2%;
+    transform: scale(.6);
+}
+
+/*Follow Us On Text*/
+.social h3 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+/*Icons*/
+i {
+    transition: all .3s ease;
+    color: #fff;
+}
+
+/*Icons Hover*/
+i:hover {
+    color: #bdbdbd;
 }
