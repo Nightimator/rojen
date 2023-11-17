@@ -2,11 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: a;
 }
 
 html,body{
     height: 100%;
     width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
 }
 
 @font-face {
@@ -18,24 +23,48 @@ html,body{
     position: relative;
     height: 100%;
     width: 100%;
+    background-color: #000;
+    overflow-y: hidden;
 }
 
-#page1{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url("https://images.unsplash.com/photo-1698681889353-d39a24b78bac?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-repeat: no-repeat;
+
+.bg-image {
+    height: 100vh; 
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-h1{
+.img1 { background-image: url("https://images.unsplash.com/photo-1698578385401-898a5b3a674e?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+.img6 { background-image: url("https://images.unsplash.com/photo-1698681889353-d39a24b78bac?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+.img2 { background-image: url("https://images.unsplash.com/photo-1698597167794-db4bc0e22a52?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+.img3 { background-image: url("https://images.unsplash.com/photo-1699084157122-f5d62eb3900b?q=80&w=1383&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+.img4 { background-image: url("https://images.unsplash.com/photo-1699122016114-72476027eeca?q=80&w=1566&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+.img5 { background-image: url("https://images.unsplash.com/photo-1699094448389-fdeac0628bcb?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); }
+
+.bg-text {
+    color: white;
+    font-weight: bold;
     font-size: 100px;
-    font-family: a;
-    font-weight: 800;
-    text-decoration: underline;
-    color: #bdbdbd;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+button{
+    margin: 60vh 45vw;
+    padding: 10px 25px;
+    font-size: 1.8rem;
+    border: 4px solid #fff;
+    border-radius: 10px 15px;
+    color: #fff;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+button:hover{
+    color: #ff004f;
+    border-color: #ff004f;
 }
