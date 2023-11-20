@@ -355,16 +355,14 @@ nav ul li a:hover::after {
 
 .btn.btn2 {
     display: inline-block;
-    border: 2px solid #ff004f;
+    border: 1px solid #ff004f;
     color: #fff;
-    background-color: #ff004f;
+    text-decoration: none;
     transition: all 0.5s;
 }
 
 .btn.btn2:hover {
-    border: 2px solid #ff004f;
-    color: #ff004f;
-    background-color: transparent;
+    background-color: #ff004f;
 }
 
 .contact-right form {
@@ -389,6 +387,7 @@ form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     cursor: pointer;
+    background: transparent;
 }
 
 .copyright {
@@ -492,5 +491,9 @@ nav .fas {
 #msg {
     display: block;
     margin-top: -40px;
+    width: 15rem;
+    text-align: center;
+    border-radius: 10px;
     color: #fff;
+    background: #ff004f;
 }
