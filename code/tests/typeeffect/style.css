@@ -5,6 +5,12 @@
   font-family: "Inter", sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   display: flex;
   height: 100vh;
@@ -18,8 +24,10 @@ body {
   font-size: 24px;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 2px solid #333; /* Typing cursor */
-  padding-right: 8px; /* Adjust for cursor width */
+  border-right: 2px solid #333;
+  /* Typing cursor */
+  padding-right: 8px;
+  /* Adjust for cursor width */
 }
 
 h1 {
@@ -51,6 +59,6 @@ h1 span.stop-blinking::before {
 
 @keyframes blank {
   50% {
-    opacity:0;
+    opacity: 0;
   }
 }
