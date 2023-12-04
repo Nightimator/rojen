@@ -25,6 +25,11 @@ body {
   font-family: p;
   src: url('/fonts/Poppins-Medium.ttf');
 }
+@font-face {
+  font-family: k;
+  src: url('/fonts/Kajiro\ Bold.woff2');
+  font-weight: 100;
+}
 
 nav{
   font-family: c;
