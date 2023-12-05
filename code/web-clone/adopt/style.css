@@ -228,7 +228,7 @@ nav > ul > li > a:hover {
 
 footer{
   background-color: #dddddd;
-  height: 50vh;
+  height: 35vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -239,4 +239,10 @@ footer{
   font-family: k;
   letter-spacing: 2px;
   font-size: 80px;
+}
+
+.h3{
+  text-align: center;
+  color: #555;
+  background-color: #dddddd;
 }
