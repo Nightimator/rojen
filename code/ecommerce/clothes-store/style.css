@@ -37,6 +37,7 @@ nav.sticky {
 nav a .logo {
   height: auto;
   width: 140px;
+  margin-top: -10px;
 }
 
 nav ul li {

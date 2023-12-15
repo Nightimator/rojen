@@ -25,7 +25,7 @@ function closemenu() {
 
 //Messages to google sheet
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbyYN0DuD9DOM3h1TMtWuAuLUfCDrnCFgq3pT7bHNrLtckjePhVSA-WOXTgrfzh_Q4yX0g/exec";
+  "https://script.google.com/macros/s/AKfycbzlDVSmmDUMYGGsMQHIAWEzA3ClvFW5ltdzQP8taEGoPAiylxD0gflx8Tcwse88BuxE/exec";
 const form = document.forms["submit-to-google-sheet"];
 const msg = document.getElementById("msg");
 
@@ -41,3 +41,10 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function () {
+    loader.style.display = "none"
+})
+
