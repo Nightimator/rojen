@@ -28,7 +28,7 @@ body {
     font-size: 36px;
     height: 80px;
     width: 80px;
-    border: 2px solid #ff004f;
+    border: 2px solid #fff;
     border-radius: 50%;
     box-shadow: 0px 0px 20px #00000067, 0px 0px 20px #00000067;
     color: #fff;
@@ -54,8 +54,4 @@ body {
   background: #d6249f;
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-}
-
-#main div:nth-child(4):hover{
-    background-color: #000;
 }
