@@ -1,34 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nightimator - Book store</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <div id="main">
-      <div id="page1">
-        <div class="container">
-          <nav>
-            <a href=""><img src="images/logo.png" class="logo" /></a>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Pages</a></li>
-              <li><a href="">Shope</a></li>
-              <li><a href="">Articles</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-            <div class="right-nav">
-              <li><i class="fa-solid fa-user"></i></li>
-              <li><i class="fa-solid fa-bag-shopping"></i></li>
-              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nightimator - Book store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="/code/ecommerce/favicon.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="page1">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="index.html"><span>Home</span></a></li>
+          <li><a href="commingsoon.html">About</a></li>
+          <div class="dropdown">
+            <li class="dropbtn"><a href="commingsoon.html">Categories <i class="fa-solid fa-chevron-down"></i></a></li>
+            <div class="dropdown-content">
+              <a href="commingsoon.html">best selling books</a>
+              <a href="commingsoon.html">popular books</a>
+              <a href="commingsoon.html">features books</a>
+              <a href="commingsoon.html">business</a>
+              <a href="commingsoon.html">technology</a>
+              <a href="commingsoon.html">adventure</a>
+              <a href="commingsoon.html">romantic</a>
+              <a href="commingsoon.html">fictional</a>
             </div>
-          </nav>
+          </div>
+          <li><a href="commingsoon.html">Shop</a></li>
+          <li><a href="commingsoon.html">Articles</a></li>
+          <li><a href="commingsoon.html">Contact</a></li>
+        </ul>
+        <div class="right-nav">
+          <li><i class="fa-solid fa-user"></i></li>
+          <li><i class="fa-solid fa-bag-shopping"></i></li>
+          <li>
+            <div class="srch">
+              <input type="checkbox" class="checkbox" checked="" />
+              <div class="mainbox">
+                <div class="iconContainer">
+                  <i class="fas fa-magnifying-glass"></i>
+                </div>
+                <input type="text" placeholder="search" class="search_input" />
+              </div>
+            </div>
+          </li>
+        </div>
+      </nav>
+      <div id="slider">
+        <div class="slides">
+          <div class="slide" id="header1">
+            <div class="container">
+              <div class="left">
+                <h1>life of the wild</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi <br> quae optio! Qui quam
+                  eius aut corrupti tempora. Dolores asperiores at <br> beatae harum officia consectetur?</p>
+                <a href="commingsoon.html"><button>learn more</button></a>
+              </div>
+              <div class="right">
+                <img src="/code/ecommerce/books-store/images/HeaderBooks/headerBook1.png">
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="header2">
+            <div class="container">
+              <div class="left">
+                <h1>simple way of piece <br> life</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi <br> quae optio! Qui quam
+                  eius aut corrupti tempora. Dolores asperiores at <br> beatae harum officia consectetur?</p>
+                <a href="commingsoon.html"><button>learn more</button></a>
+              </div>
+              <div class="right">
+                <img src="/code/ecommerce/books-store/images/HeaderBooks/headerBook2.png">
+              </div>
+            </div>
+          </div>
+          <div class="slide" id="header3">
+            <div class="container">
+              <div class="left">
+                <h1>great travel at <br> desert</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore modi <br> quae optio! Qui quam
+                  eius aut corrupti tempora. Dolores asperiores at <br> beatae harum officia consectetur?</p>
+                <a href="commingsoon.html"><button>learn more</button></a>
+              </div>
+              <div class="right">
+                <img src="/code/ecommerce/books-store/images/HeaderBooks/headerBook3.png">
+              </div>
+            </div>
+          </div>
+          <!-- Add more slides as needed -->
+        </div>
+
+        <button id="prev" onclick="prevSlide"><i class="fa-solid fa-arrow-left"></i></button>
+        <button id="next" onclick="nextSlide"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <div id="page2">
+      <div id="logos">
+        <img src="images/Brands/brand1.png">
+        <img src="images/Brands/brand2.png">
+        <img src="images/Brands/brand3.png">
+        <img src="images/Brands/brand4.png">
+        <img src="images/Brands/brand5.png">
+      </div>
+    </div>
+    <div id="page3">
+      <div class="container">
+        <h4>some quatity items</h4>
+        <h1>Features Books <br> <img src="images/victor.png"></h1>
+        <div class="books">
+          <div class="book">
+            <a href="commingsoon.html">
+              <img src="images/FeaturedBooksImages/FeaturedBook1.png">
+              <div class="price">
+                <h4>Great Travel At Desert</h4>
+                <h5>Sanchit Howdy</h5>
+                <p>$38.00</p>
+              </div>
+            </a>
+          </div>
+          <div class="book">
+            <a href="commingsoon.html">
+              <img src="images/FeaturedBooksImages/FeaturedBook2.png">
+              <div class="price">
+                <h4>Great Travel At Desert</h4>
+                <h5>Sanchit Howdy</h5>
+                <p>$38.00</p>
+              </div>
+            </a>
+          </div>
+          <div class="book">
+            <a href="commingsoon.html">
+              <img src="images/FeaturedBooksImages/FeaturedBook3.png">
+              <div class="price">
+                <h4>Great Travel At Desert</h4>
+                <h5>Sanchit Howdy</h5>
+                <p>$38.00</p>
+              </div>
+            </a>
+          </div>
+          <div class="book">
+            <a href="commingsoon.html">
+              <img src="images/FeaturedBooksImages/FeaturedBook4.png">
+              <div class="price">
+                <h4>Great Travel At Desert</h4>
+                <h5>Sanchit Howdy</h5>
+                <p>$38.00</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="down">
+          <div class="dots">
+            <label class="dot">
+              <input type="checkbox" checked="checked">
+              <div class="checkmark"></div>
+            </label>
+            <label class="dot">
+              <input type="checkbox">
+              <div class="checkmark"></div>
+            </label>
+            <label class="dot">
+              <input type="checkbox">
+              <div class="checkmark"></div>
+            </label>
+            <label class="dot">
+              <input type="checkbox">
+              <div class="checkmark"></div>
+            </label>
+            <label class="dot">
+              <input type="checkbox">
+              <div class="checkmark"></div>
+            </label>
+          </div>
+          <a href="commingsoon.html">
+            <h4>view all products <i class="fas fa-arrow-turn-up" style="transform: rotate(90deg);"></i></h4>
+          </a>
         </div>
       </div>
     </div>
-  </body>
+    <div id="page4">
+      <div class="container">
+        <div class="left">
+          <img src="images/SellingBookImage/sellingBook.png">
+        </div>
+        <div class="right">
+          <h1>Best Selling Book</h1>
+          <img src="images/victor.png">
+          <p style="margin-top: 6%;">by timbur hood</p>
+          <h3>Birds Gonna Be Happy</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora? Aut ducimus magni quam sequi.</p>
+          <h4>$45.00</h4>
+          <a href="commingsoon.html"><button>shop it now <i class="fa-solid fa-arrow-right"></i></button></a>
+        </div>
+      </div>
+    </div>
+    <div id="page5">
+      <div class="container">
+        <h4>some quatity items</h4>
+        <h1>Popular Books <br> <img src="images/victor.png"></h1>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('all')">all</p>
+          <p class="tab-links" onclick="opentab('business')">business</p>
+          <p class="tab-links" onclick="opentab('technology')">technology</p>
+          <p class="tab-links" onclick="opentab('adventure')">adventure</p>
+          <p class="tab-links" onclick="opentab('romantic')">romantic</p>
+          <p class="tab-links" onclick="opentab('fictional')">fictional</p>
+        </div>
+        <div class="tab-contents active-tab" id="all">
+          <div class="books">
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book1.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book2.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book3.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book4.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book5.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book6.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book7.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book8.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-contents" id="business">
+          <div class="books">
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book1.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book6.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-contents" id="technology">
+          <div class="books">
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book2.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book7.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-contents" id="adventure">
+          <div class="books">
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book3.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-contents" id="romantic">
+          <div class="books">
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book4.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book8.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-contents" id="fictional">
+          <div class="books">
+            <div class="book">
+              <a href="commingsoon.html">
+                <img src="images/PopularBooksImage/book5.png">
+                <div class="price">
+                  <h4>Great Travel At Desert</h4>
+                  <h5>Sanchit Howdy</h5>
+                  <p>$38.00</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page6">
+      <div class="container">
+        <h1>Quote Of The Day</h1>
+        <img src="images/victor.png">
+        <h3>"The more that you read, the more things you will know. The <br> more that you learn, the more places you'll
+          go."</h3>
+        <p>Dr. Scuss</p>
+      </div>
+    </div>
+    <div id="page7">
+      <div class="container">
+        <h4>read our articles</h4>
+        <h1>Latest Articles <br> <img src="images/victor.png"></h1>
+        <div class="articles">
+          <div class="article">
+            <a href="commingsoon.html">
+              <img src="images//letestArticlesIamge/ArticleImage1.png">
+              <div class="sabda">
+                <p>2 Aug 2021</p>
+                <h2>Reading Books Always Makes <br> The Money Happy</h2>
+                <div class="tala">
+                  <p>inspiration</p>
+                  <div class="tala-icons">
+                    <a href="commingsoon.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="commingsoon.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="commingsoon.html"><i class="fa-brands fa-x-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="article">
+            <a href="commingsoon.html">
+              <img src="images//letestArticlesIamge/ArticleImage2.png">
+              <div class="sabda">
+                <p>2 Aug 2021</p>
+                <h2>Reading Books Always Makes <br> The Money Happy</h2>
+                <div class="tala">
+                  <p>inspiration</p>
+                  <div class="tala-icons">
+                    <a href="commingsoon.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="commingsoon.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="commingsoon.html"><i class="fa-brands fa-x-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="article">
+            <a href="commingsoon.html">
+              <img src="images//letestArticlesIamge/ArticleImage3.png">
+              <div class="sabda">
+                <p>2 Aug 2021</p>
+                <h2>Reading Books Always Makes <br> The Money Happy</h2>
+                <div class="tala">
+                  <p>inspiration</p>
+                  <div class="tala-icons">
+                    <a href="commingsoon.html"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="commingsoon.html"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="commingsoon.html"><i class="fa-brands fa-x-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="btn">
+          <a href="commingsoon.html">
+            <button>read all articles <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="contact-info">
+          <div class="first-info">
+            <h2>about us</h2>
+            <a href="commingsoon.html">
+              <p>vision</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>articles</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>careers</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>service terms</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>donate</p>
+            </a>
+          </div>
+          <div class="second-info">
+            <h2>discover</h2>
+            <a href="commingsoon.html">
+              <p>home</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>articles</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>books</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>authors</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>subjects</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>advance search</p>
+            </a>
+          </div>
+          <div class="third-info">
+            <h2>my account</h2>
+            <a href="commingsoon.html">
+              <p>sign in</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>articles</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>view cart</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>my wishtlist</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>track my order</p>
+            </a>
+          </div>
+          <div class="fourth-info">
+            <h2>helps</h2>
+            <a href="commingsoon.html">
+              <p>help center</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>report a problem</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>view cart</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>suggesting edits</p>
+            </a>
+            <a href="commingsoon.html">
+              <p>contact us</p>
+            </a>
+          </div>
+        </div>
+        </section>
+
+        <div class="end-text">
+          <p>
+            © 2023 <span>Rojen.</span> All rights reserved.
+          </p>
+          <div class="🔗">
+            <a href="commingsoon.html"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="commingsoon.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="commingsoon.html"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="commingsoon.html"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

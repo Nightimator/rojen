@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: p;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #f7f4fb;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 15px #00000040, inset 0px 0px 15px #00000040;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;
+  outline: none;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #3b3b3b;
+  outline: none;
+}
+
+@font-face {
+  font-family: p;
+  src: url("/fonts/Poppins-Medium.woff2");
+}
+
+#main {
+  position: relative;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+#profile-card {
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00000040, 0px 0px 20px #00000040;
+  background-color: #4071ed;
+}
+
+.up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: -24px;
+}
+
+.up .image {
+  height: 132px;
+  border: 3px solid #4071ed;
+  border-radius: 50%;
+}
+
+.up img {
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.down {
+  padding: 30px 60px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  background-color: #fff;
+}
+
+.down h2 {
+  font-size: 25px;
+}
+
+.down h3 {
+  font-size: 20px;
+}
+
+.down .social-icons {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  transition: all 0.42s ease-in-out;
+}
+
+.social-icons a:hover {
+  font-size: 30px;
+  transform: translateY(-15px);
+}
+
+.social-icons a:first-child {
+  background-color: #316ff6;
+}
+
+.social-icons a:nth-child(3) {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.social-icons a:last-child {
+  background-color: #ff0000;
+}
+
+.sub-mes {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  column-gap: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sub-mes h4 {
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #4071ed;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 60px;
+  text-align: center;
+  border-radius: 30px;
+  font-size: 30px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+#page1 .scroll{
+  top: 28%;
+  right: 3%;
+  color: #00000060;
+  box-shadow: inset 0px 0px 10px #00000060, inset 0px 0px 10px #00000060;
+}
+
+#page1 .scroll:hover{
+  color: #00000080;
+  box-shadow: inset 0px 0px 10px #00000090, inset 0px 0px 10px #00000090;
+}
+
+#page2 .scroll{
+  top: 61%;
+  right: 3%;
+  color: #ffffff15;
+  box-shadow: inset 0px 0px 10px #ffffff15, inset 0px 0px 10px #ffffff15;
+}
+
+#page2 .scroll:hover{
+  color: #ffffff50;
+  box-shadow: inset 0px 0px 10px #ffffff50, inset 0px 0px 10px #ffffff50;
+}
+
+#page3 .scroll{
+  top: 94.5%;
+  right: 40%;
+  color: #000;
+  box-shadow: inset 0px 0px 10px #000, inset 0px 0px 10px #000;
+}
+
+#page3 .scroll:hover{
+  color: #000;
+  box-shadow: inset 0px 0px 10px #000, inset 0px 0px 10px #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .down h2 {
+    font-size: 20px;
+  }
+
+  .down h3 {
+    font-size: 16px;
+  }
+
+  .social-icons a {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sub-mes {
+    font-size: 15px;
+    column-gap: 15px;
+    text-align: center;
+  }
+
+  .bottom {
+    font-size: 16px;
+  }
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #00050b;
+}
+
+.credit-card {
+  height: 280px;
+  width: 500px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #ffffff10, 0px 0px 20px #ffffff10;
+  background: #000
+    url("https://images.unsplash.com/photo-1699865574995-eb61e12d97bd?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    center no-repeat;
+  background-size: cover;
+}
+
+.mathi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mathi img:first-child {
+  height: auto;
+  width: 240px;
+}
+
+.mathi img:last-child {
+  height: auto;
+  width: 80px;
+}
+
+.mid h3 {
+  font-weight: 500;
+}
+
+.mid h2 {
+  font-weight: 500;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.tala {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left h2 {
+  font-weight: 500;
+}
+
+.right h2 {
+  font-weight: 500;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background: #000
+    url("https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    center no-repeat;
+  background-size: cover;
+}
+
+#page3 .open {
+  padding: 15px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#page3 span:active {
+  display: none;
+}
+
+.sidenav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  justify-content: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+}
+
+.sidenav .uper a{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 12px 12px;
+  font-size: 30px;
+}
+
+.sidenav a {
+  padding: 12px 20px;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
+}

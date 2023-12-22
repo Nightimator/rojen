@@ -431,7 +431,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
   #page1 {
-    background-image: url(images/phone-background.webp);
+    background-image: url('images/phone-background.webp');
   }
 
   .logo {

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comming Soon</title>
+    <link rel="stylesheet" href="commingsoon.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5229/5229336.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="main">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" class="logo" /></a>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="commingsoon.html">About</a></li>
+                  <div class="dropdown">
+                  <li class="dropbtn"><a href="commingsoon.html">Categories <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <div class="dropdown-content">
+                      <a href="commingsoon.html">best selling books</a>
+                      <a href="commingsoon.html">popular books</a>
+                      <a href="commingsoon.html">features books</a>
+                      <a href="commingsoon.html">business</a>
+                      <a href="commingsoon.html">technology</a>
+                      <a href="commingsoon.html">adventure</a>
+                      <a href="commingsoon.html">romantic</a>
+                      <a href="commingsoon.html">fictional</a>
+                    </div>
+                  </div> 
+                  <li><a href="commingsoon.html">Shop</a></li>
+                  <li><a href="commingsoon.html">Articles</a></li>
+                  <li><a href="commingsoon.html">Contact</a></li>
+                </ul>
+                <div class="right-nav">
+                  <li><i class="fa-solid fa-user"></i></li>
+                  <li><i class="fa-solid fa-bag-shopping"></i></li>
+                  <li>
+                    <div class="srch">
+                    <input type="checkbox" class="checkbox" checked="" />
+                    <div class="mainbox">
+                      <div class="iconContainer">
+                        <i class="fas fa-magnifying-glass"></i>
+                      </div>
+                      <input type="text" placeholder="search" class="search_input" />
+                    </div>
+                  </div>
+                  </li>
+                </div>
+              </nav>
+        <div class="middle">
+            <h1>COMING SOON</h1><br>
+            <hr><br>
+            <p id="date" style="font-size:30px"></p>
+        </div>
+        <div class="bottomleft">
+            <p>
+            <div class="social">
+                <!--Facebook-->
+                <a class="fb" href="https://facebook.com/rojenchakradhar" target="_blank">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                </a>
+                <!--Youtube-->
+                <a class="yt" href="https://youtube.com/@nightimator" target="_blank">
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+                <!--Instagram-->
+                <a class="instalgo" href="https://instagram.com/nightimator_" target="_blank">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+                <!--Tiktok-->
+                <a class="tktk" href="https://tiktok.com/@nightimator" target="_blank">
+                    <i class="fa-brands fa-tiktok fa-xl"></i>
+                </a>
+                <!--Twitter-->
+                <a class="x" href="https://twitter.com/Nightimator_" target="_blank">
+                    <i class="fa-brands fa-x-twitter fa-xl"></i>
+                </a>
+                <!--Threads-->
+                <a class="thread" href="https://threads.com/nightimator" target="_blank">
+                    <i class="fa-brands fa-threads fa-xl"></i>
+                </a>
+            </div>
+            </p>
+        </div>
+</div>
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("July 18, 2080 13:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function () {
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="date"
+  document.getElementById("date").innerHTML =
+    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("date").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+</body>
+</html>
