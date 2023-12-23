@@ -15,10 +15,6 @@ body {
     font-family: m;
     src: url('Montserrat-Medium.woff2');
 }
-/*For remove scroll bar*/
-body::-webkit-scrollbar {
-    display: none;
-}
 
 /*For everything inside body*/
 body {
