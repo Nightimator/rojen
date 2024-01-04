@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Diner - Nightimator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="page1">
+        <nav>
+          <a href="#">
+            <h1>rojen.</h1>
+          </a>
+          <ul id="sidemenu">
+            <i class="fas fa-times" onclick="closemenu()"></i><br />
+            <li><a href="#">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="#page1">links</a></li>
+            <li><a href="https://www.paypal.com/donate/?hosted_button_id=CQPRU9N45MY96" target="_blank">donate</a></li>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+          <div class="title">
+            <h1 class="flicker-text" id="flickerText">dream Diner</h1>
+          </div>
+          <div class="levels">
+            <a href="#page2"><button>start game</button></a>
+          </div>
+        </div>
+      </div>
+      <div id="page2">
+        <video id="background-video" autoplay muted loop>
+          <source src="images/background.webm" type="video/webm" />
+        </video>
+        <div id="container">
+          <h2>
+            It's night time. You're driving but it's raining heavily. You see a
+            Diner nearby with the lights on...
+          </h2>
+          <div class="options">
+            <button onclick="showModal('modal1')">Keep driving</button>
+            <button onclick="showModal('modal6')">Go to the Diner</button>
+          </div>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You died.</h1>
+              <h2>Your car broke down and you froze to death in the snow.</h2>
+              <br /><br />
+              <a href="#page1"
+                ><button onclick="hideModal('modal1')" class="close">
+                  restart?
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You Survived.</h1>
+              <h2>You leave your car and enter the Diner...</h2>
+              <br /><br />
+              <a href="#page3"
+                ><button onclick="hideModal('modal6')" class="close">
+                  ok
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page3">
+        <video id="background-video" autoplay muted loop>
+          <source src="images/background.webm" type="video/webm" />
+        </video>
+        <div id="container">
+          <h2>
+            A waiter takes you to your table, but he has no face and only a
+            gaint mouth full of sharp teeth. Everyone else sitting on the Diner
+            has black eyes. They all turn to look at you...
+          </h2>
+          <div class="options">
+            <button onclick="showModal('modal2')">read Rules</button>
+          </div>
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1><u>Rules:</u></h1>
+              <ol>
+                <li>
+                  1. Don't drink the water. There's something inside it that you
+                  can't see.
+                </li>
+                <li>2. Don't order off the Menu.</li>
+                <li>
+                  3. Don't get caught in the kitchen. If you see what they're
+                  REALLY cooking, they will kill you.
+                </li>
+                <li>
+                  4. If they hear your voice, they will know you don't belong.
+                </li>
+                <li>5. Find a way to escape.</li>
+              </ol>
+              <br />
+              <a href="#page4"
+                ><button class="close" onclick="hideModal('modal2')">
+                  ok
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page4">
+        <div id="container">
+          <h2>The waiter puts a jug of water on the table. What do you do?</h2>
+          <div class="options">
+            <button onclick="showModal('modal3')">
+              1. Take a ship os the water to be polite
+            </button>
+            <button onclick="showModal('modal4')">
+              2. Smile and look at the Menu
+            </button>
+            <button onclick="showModal('modal5')">
+              3. Ask the waiter why he has no face...
+            </button>
+          </div>
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You Died.</h1>
+              <h2>The bugs inside the water ate your throat</h2>
+              <br /><br />
+              <a href="#page1"
+                ><button onclick="hideModal('modal3')" class="close">
+                  restart?
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You Survived.</h1>
+              <h2>For now...</h2>
+              <br /><br />
+              <a href="#page5"
+                ><button onclick="hideModal('modal4')" class="close">
+                  ok
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+        </div>
+        <div id="modal5" class="modal">
+          <div class="modal-content">
+            <br />
+            <h1>You Died.</h1>
+            <h2>
+              The waiter dragged you into the kitchen and boiled you alive
+            </h2>
+            <br /><br />
+            <a href="#page1"
+              ><button onclick="hideModal('modal5')" class="close">
+                restart?
+              </button></a
+            ><br /><br />
+          </div>
+        </div>
+      </div>
+      <div id="page5">
+        <div id="container">
+          <h2>
+            As you're looking at the menu, a girl from the table behind you
+            stands up and walks towards you. You see her eyes are normal. She
+            hands you a note...
+          </h2>
+          <div class="options">
+            <button onclick="showModal('modal7')">
+              1. Take the note and ask her how to escape
+            </button>
+            <button onclick="showModal('modal8')">
+              2. Take the note and hide it
+            </button>
+            <button onclick="showModal('modal9')">
+              3. Take the note and read it
+            </button>
+          </div>
+          <div id="modal7" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You Died.</h1>
+              <h2>
+                They heard you. They know you don't belong so they cut all your
+                limbs off and hung them up with meat hooks...
+              </h2>
+              <br /><br />
+              <a href="#page1"
+                ><button onclick="hideModal('modal7')" class="close">
+                  restart?
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+          <div id="modal8" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You Survived...</h1>
+              <br /><br />
+              <a href="#page6"
+                ><button onclick="hideModal('modal8')" class="close">
+                  ok
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+        </div>
+        <div id="modal9" class="modal">
+          <div class="modal-content">
+            <br />
+            <h1>You Died.</h1>
+            <h2>
+              The girl starts screaming. The waiter ties you and the girl
+              together and shoves you in the oven to cook you...
+            </h2>
+            <br /><br />
+            <a href="#page1"
+              ><button onclick="hideModal('modal9')" class="close">
+                restart?
+              </button></a
+            ><br /><br />
+          </div>
+        </div>
+      </div>
+      <div id="page6">
+        <div id="container">
+          <h2>
+            The note says:<br>"Front door is a trap. Escape is in the kitchen." The
+            girl points to the kitchen, hinting that you should follow her
+            inside. Do you trust her?
+          </h2>
+          <div class="options">
+            <button onclick="showModal('modal10')">
+              1. Yes, stand up and follow her to the kitchen
+            </button>
+            <button onclick="showModal('modal11')">
+              2. No, stay at your table and ignore her
+            </button>
+            <button onclick="showModal('modal12')">
+              3. No, but invite her to sit at your table
+            </button>
+          </div>
+          <div id="modal10" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You Died.</h1>
+              <h2>
+                The waiter caught you and removed your eyeballs with an ice
+                cream scopper
+              </h2>
+              <br /><br />
+              <a href="#page1"
+                ><button onclick="hideModal('modal10')" class="close">
+                  restart?
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+          <div id="modal11" class="modal">
+            <div class="modal-content">
+              <br />
+              <h1>You Survived...</h1>
+              <h2>
+                but you're drawing the attention. The other guests are staring
+                at you both...
+              </h2>
+              <br /><br />
+              <a href="#page7"
+                ><button onclick="hideModal('modal11')" class="close">
+                  ok
+                </button></a
+              ><br /><br />
+            </div>
+          </div>
+        </div>
+        <div id="modal12" class="modal">
+          <div class="modal-content">
+            <br />
+            <h1>You Survived.</h1>
+            <h2>Now you must escape together...</h2>
+            <br /><br />
+            <a href="#page7"
+              ><button onclick="hideModal('modal12')" class="close">
+                ok
+              </button></a
+            ><br /><br />
+          </div>
+        </div>
+      </div>
+      <div id="page7">
+        <div id="container">
+          <h2>
+            As you're sitting with the girl, the waiter comes back and puts a
+            plate of food in front of you...
+          </h2>
+          <div class="options">
+            <a href="commingsoon.html"><button>1. Eat the food</button></a>
+            <a href="commingsoon.html"
+              ><button>2. Say that isn't what you ordered</button></a
+            >
+            <a href="commingsoon.html"
+              ><button>
+                3. Smile and keep the food on your table but don't eat it
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

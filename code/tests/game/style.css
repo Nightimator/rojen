@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #efefef;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  cursor: url("images/cursor.png");
+}
+
+@font-face {
+  font-family: cookie;
+  src: url("/fonts/Cookie-Regular.woff2");
+}
+
+@font-face {
+  font-family: scary;
+  src: url("/fonts/Curse\ of\ the\ Zombie.ttf");
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("/fonts/Poppins-Medium.woff2");
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/background.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 5%;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px #00000040, 5px 5px 5px #00000040;
+}
+
+nav .fas {
+  display: none;
+}
+
+nav a h1 {
+  color: #dfdfdf;
+  font-size: 45px;
+  align-items: center;
+  font-family: cookie;
+  text-transform: capitalize;
+  transition: all 0.1s ease-in-out;
+}
+
+nav a h1:hover {
+  text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  font-size: 30px;
+}
+
+nav ul li a {
+  color: #dfdfdf;
+  font-family: cookie;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+nav ul li a:hover {
+  text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+}
+
+.title .flicker-text {
+  font-family: scary;
+  color: #efefef;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+}
+
+.levels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 230px;
+}
+
+.levels button {
+  color: #dfdfdf;
+  font-family: scary;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  border: 2px solid #696969;
+  border-radius: 20px;
+  padding: 12px 32px;
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.levels button:hover {
+  scale: 0.95;
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+#container {
+  height: auto;
+  width: 550px;
+  text-align: center;
+  padding: 30px 20px;
+  color: #dfdfdf;
+  background-color: #00000090;
+  border: 1px solid #00000060;
+  box-shadow: 0 0 15px #00000090, 0 0 15px #00000090;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.options button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #dfdfdf;
+  background-color: transparent;
+  box-shadow: inset 0 0 20px #00000050, inset 0 0 20px #00000050;
+}
+
+.options button:hover {
+  scale: 0.9;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  color: #252525;
+  background-color: #efefef;
+  margin: auto;
+  padding: 0 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.close {
+  font-family: scary;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #000000;
+  background-color: transparent;
+  box-shadow: inset 0 0 20px #00000050, inset 0 0 20px #00000050;
+}
+
+.close:hover {
+  scale: 0.9;
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pcbackground.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page3 .options {
+  margin-top: 50px;
+}
+
+#page3 .modal {
+  padding-top: 50px;
+}
+
+#page3 .modal-content {
+  width: 25%;
+}
+
+.modal-content ol li {
+  display: inline-block;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#page4 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/waiterpc.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page3 #container,
+#page4 #container,
+#page5 #container,
+#page6 #container,
+#page7 #container {
+  border: 1px solid #000;
+}
+
+#page3 .options,
+#page4 .options,
+#page5 .options,
+#page6 .options,
+#page7 .options {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#page3 .options button,
+#page4 .options button,
+#page5 .options button,
+#page6 .options button,
+#page7 .options button {
+  margin-top: 20px;
+  border: 1px solid #ffffff40;
+}
+
+#page5 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/Untitled\ design\ \(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page6 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/6x7csl_df68fd6ff2f75707de077b35a7af7027b677d4d4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#page6 #container {
+  border-radius: 10px;
+  color: #000;
+  background-image: url("https://previews.123rf.com/images/ke77kz/ke77kz1510/ke77kz151000168/47743844-old-dirty-and-crumpled-sheet-of-paper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#page6 .options button {
+  color: #000;
+  font-weight: 800;
+}
+
+#page7 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/v8ii8c_593394ca1d0e5c4417c89699b463093810211dee.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  #page1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(images/Untitled\ design.png);
+  }
+
+  .logo {
+    margin-top: -5px;
+    width: 140px;
+  }
+
+  nav .fas {
+    display: block;
+    font-size: 25px;
+    color: #efefef;
+  }
+
+  nav ul {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    width: 200px;
+    padding-top: 25px;
+    padding-left: 10px;
+    background: #00000090;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  .title {
+    margin-top: 250px;
+  }
+
+  .title .flicker-text {
+    letter-spacing: 5px;
+    font-size: 40px;
+  }
+
+  .levels {
+    margin-top: 200px;
+  }
+
+  .levels button {
+    font-size: 30px;
+  }
+
+  #container {
+    height: auto;
+    width: 80%;
+  }
+
+  #container h2 {
+    font-size: 20px;
+  }
+
+  .options {
+    margin-top: 80px;
+  }
+
+  .options button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .modal {
+    padding-top: 150px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+  #page3 .modal-content {
+    width: 85%;
+  }
+
+  #page3 {
+    background-image: url(images/mobilebackground.png);
+  }
+
+  #page5 {
+    background-image: url(images/1.png);
+  }
+
+  #page4 {
+    background-image: url(images/waitermobile.png);
+  }
+}
